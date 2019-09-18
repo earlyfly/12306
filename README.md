@@ -28,11 +28,11 @@
 #### 项目使用说明
 
   - 服务器启动:
-      - 修改[配置](TickerConfig.py)文件
+      - 修改[配置](TickerConfig.py)文件 ========Mac要修改requirements.txt里面的matplotlib依赖库版本为2.2.4========
         - 可以配置邮箱,配置邮箱的格式在[配置](TickerConfig.py)里面可以看到ex
         - 可以配置server酱提醒（推荐）[配置教程](https://www.jianshu.com/p/8d10b5b9c4e3)
         - 配置[配置](TickerConfig.py)文件的时候，需注意空格和遵循python语法格式
-      - 运行根目录`sudo python run.py`，即可开始
+      - 运行根目录`sudo python run.py`，即可开始（======MAC：'python3 run.py'======）
   - 如果你的服务器安装了docker与docker-compose, 那么就可以通过`docker-compose`进行启动,`docker.sh`脚本对此进行了封装，可以通过如下命令进行启动
       - 1、`sudo ./docker.sh run` #创建一个镜像并启动容器，如果镜像已经创建过了会直接启动容器。
       - 2、`sudo ./docker.sh restart` #修改配置文件后，通过此名命令可重新加载容器运行
